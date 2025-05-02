@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaFacebookF, FaInstagram, FaGithub } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaGithub, FaPinterest } from 'react-icons/fa'
+import { FaX } from 'react-icons/fa6'
 
 
 const Footer = () => {
@@ -86,9 +87,11 @@ const Footer = () => {
       className="flex justify-center gap-6 text-2xl mb-10"
     >
    
+
       <FaFacebookF className="cursor-pointer hover:text-black" />
       <FaInstagram className="cursor-pointer hover:text-black" />
-      <FaGithub className="cursor-pointer hover:text-black" />
+     <FaX className="cursor-pointer hover:text-black" />
+      <FaPinterest className="cursor-pointer hover:text-black" />
     </motion.div>
 
     {/* Bottom Links */}
@@ -98,13 +101,7 @@ const Footer = () => {
       transition={{ duration: 0.6, delay: 0.6 }}
       className="text-center space-y-4 text-sm text-gray-500"
     >
-      <div className="flex justify-center gap-4">
-        <span className="hover:underline cursor-pointer">License</span>
-        <span>|</span>
-        <span className="hover:underline cursor-pointer">Style Guide</span>
-        <span>|</span>
-        <span className="hover:underline cursor-pointer">Customize</span>
-      </div>
+     
       <p>
         Copyright © Design & Developed by <span className="text-black font-semibold"></span> 
         <span className="text-black font-semibold">Craftsphere</span>

@@ -28,7 +28,7 @@ const BackToTopButton = () => {
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.4 }}
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-black/60 hover:bg-black backdrop-blur-lg text-white p-3 rounded-full shadow-lg z-50"
+          className="fixed bottom-6 right-6 bg-black/60 hover:bg-bk backdrop-blur-lg text-white p-3 rounded-full shadow-lg z-50"
         >
           <ChevronUp className="w-6 h-6" />
         </motion.button>
