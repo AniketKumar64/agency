@@ -19,7 +19,7 @@ const Info = () => {
       ]
   return (
     <div className='py-16  md:py-9 md:my-10  '>
-         <section id="info" className="py-16 md:px-8 px-4 md:min-h-screen flex items-center bg-[#f5f5f5]"
+         <section id="info" className="py-16 md:px-8 px-4 md:min-h-screen flex items-center bg-transparent"
      >
       <div className="max-w-7xl mx-auto px-4">
          <div className="flex items-center justify-center gap-2 mb-10">

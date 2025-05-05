@@ -42,6 +42,8 @@ const Projects = () => {
        {Projects.map((project, index) => (
          <a
            href={project.link}
+            target="_blank"
+  rel="noopener noreferrer"
            key={index}
            className="group transition-transform hover:scale-105"
          >
@@ -49,6 +51,7 @@ const Projects = () => {
              <img
                src={project.imageUrl}
                alt={project.title}
+               
                className="w-full h-96 object-cover group-hover:opacity-90 transition"
              />
            </div>

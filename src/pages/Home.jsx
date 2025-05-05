@@ -8,6 +8,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
 import BackToTopButton from '../components/BackToTopButton'
+import Works from '../components/Works'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <About/>
         <Projects/>
         <Services/>
+        <Works/>
          <FAQ/>
         <Contact/>
         <BackToTopButton/>

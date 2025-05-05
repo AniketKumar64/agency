@@ -3,52 +3,59 @@ import { motion } from 'framer-motion'
 
 const Services = () => {
 
-    const services = [
-        {
-            title: "Web Development",
-            items: [
-                "Responsive Web Design",
-                "E-commerce Solutions",
-                "Content Management Systems",
-                "Custom Web Applications",
-            ],
-            },
-            {
-            title: "UI/UX Design",
-            items: [
-                "User Research and Analysis",
-                "Wireframing and Prototyping",
-                "Visual Design",
-                "Usability Testing",
-            ],
-            },
-            {
-            title: "Digital Marketing",
-            items: [
-                "Search Engine Optimization (SEO)",
-                "Social Media Marketing",
-                "Email Marketing",
-                "Pay-Per-Click Advertising (PPC)",
-            ],
-            },
-            {
-            title: "Branding & Identity",
-            items: [
-                "Logo Design",
-                "Brand Strategy Development",
-                "Visual Identity Creation",
-                "Brand Guidelines",
-            ],
-            },  
-    ]
+    const services= [
+      {
+        title: "UI/UX Design",
+        items: [
+          "Landing Pages",
+          "Prototypes",
+          "Websites",
+          "Design Systems",
+          "Dev Handover",
+          "Upgrading Websites"
+        ],
+        img: "https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png", 
+
+      },
+      {
+        title: "Branding",
+        items: [
+          "Logo and Branding",
+          "Brand Guides",
+          "Promotional Videos",
+          "Poster and Post for Social Media"
+        ],
+   img: "https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png",       },
+      {
+        title: "Print",
+        items: [
+          "Business Cards",
+          "Stationery",
+          "Packaging",
+          "Brochures"
+        ],
+   img: "https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png",       },
+      {
+        title: "SaaS Services",
+        items: [
+          "Cross-Platform Apps with Flutter",
+          "Custom SaaS Platforms beyond Flutter",
+          "API Integration",
+          "Backend Development",
+          "Fast, Scalable & Secure App Solutions"
+        ],
+   img: "https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png",       }
+    ];
+    
 
     const colors = [
-        "from-white to-white",
+      "from-purple-500/10 to-pink-500/20",
+        // // "from-white to-white",
         // "from-pink-100/40 to-pink-50/40",
         // "from-blue-100/40 to-blue-50/40",
         // "from-green-100/40 to-green-50/40",
         // "from-yellow-100/40 to-yellow-50/40",
-        // "from-purple-100/40 to-purple-50/40",
+        // // "from-purple-100/40 to-purple-50/40",
     ]
 
 
@@ -65,44 +72,38 @@ const Services = () => {
       </h2>
 
       {/* Services Grid */}
-      <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {services.map((service, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {services.map((service, index) => (
           <motion.div
-            key={index}
-            className={`bg-gradient-to-br   border-white/30 backdrop-blur-md  p-6 rounded-2xl flex flex-col gap-4 hover:shadow-sm hover:scale-105 transition-transform duration-300 ${
-              service.special ? "col-span-2" : ""
-            }`}
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: index * 0.15,
-              duration: 0.6,
-                type: "spring",
-            }}
-          
-          
+                 key={index}
+                 className="gap-6 p-6 bg-white/5 hover:border-2 hover:border-pink-300 duration-100 transition-all ease-linear backdrop-blur-lg  rounded-xl shadow-md flex flex-col"
+                 initial={{ opacity: 0, y: 50 }} // Start with a slight vertical offset and hidden state
+                 animate={{ opacity: 1, y: 0 }} // Fade in and slide to normal position
+                 transition={{
+                   delay: index * 0.3, // Stagger the animation
+                   duration: 0.6,
+                   ease: "easeOut",
+                 }}
+                 whileHover={{
+                   scale: 1.05, // Slightly scale up on hover
+                   transition: { duration: 0.3 },
+                 }}
+               >  <div className="flex flex-col justify-start  h-full">
+               
+            <h3 className="text-gray-900 text-3xl font-semibold mb-4">{service.title}</h3>
+            <ul className=" pl-5 space-y-2 text-gray-800">
+              {service.items.map((item, itemIndex) => (
+                <li key={itemIndex} className="flex items-center">
+                  <span className="text-gray-900">•</span> {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </motion.div>
+      ))}
+    </div>
 
-          >
-               <div className="absolute inset-0 grid grid-cols-3 grid-rows-3 opacity-40 rounded-3xl"></div>
 
-            <h3 className="font-bold text-3xl text-indigo-700 mb-4">
-              {service.title}
-            </h3>
-            <ul className="space-y-2 bg-gray-50 p-4 rounded-xl  text-gray-950 text-[15px] leading-relaxed">
-  {service.items.map((item, idx) => (
-    <li
-      key={idx}
-      className="flex items-start gap-2 hover:bg-white transition-all duration-200 p-2 rounded-md"
-    >
-      <span className="text-primary font-semibold text-lg leading-none">•</span>
-      <span>{item}</span>
-    </li>
-  ))}
-</ul>
-
-          </motion.div>
-        ))}
-      </div>
     </div>
   </section>
   )

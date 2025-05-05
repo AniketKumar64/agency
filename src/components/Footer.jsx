@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaFacebookF, FaInstagram, FaGithub } from 'react-icons/fa'
 import { FaPinterest, FaX } from 'react-icons/fa6'
+import logo from '../assets/logo.png' // Adjust the path as necessary
 
 
 const Footer = () => {
@@ -47,7 +48,7 @@ const Footer = () => {
 
 
   return (
-    <footer className=" backdrop-blur-md text-gray-700 pt-16 pb-8 px-4">
+    <footer className="h-full  backdrop-blur-md text-gray-700  px-4">
     {/* Logo */}
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -55,11 +56,19 @@ const Footer = () => {
       transition={{ duration: 0.6 }}
       className="text-center mb-12"
     >
-      <h1 className="text-2xl font-light tracking-wider">Craftsphere </h1>
+      <div className="flex items-center justify-center">
+  <a href="#home" className="block">
+    <img
+      src={logo}
+      alt="logo"
+      className="w-52 h-auto object-contain" // adjust size/style as needed
+    />
+  </a>
+</div>
     </motion.div>
 
     {/* Menus */}
-    <motion.div
+    {/* <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6, delay: 0.2 }}
@@ -77,7 +86,7 @@ const Footer = () => {
           </ul>
         </div>
       ))}
-    </motion.div>
+    </motion.div> */}
 
     {/* Social icons */}
     <motion.div

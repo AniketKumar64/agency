@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
     id="contact"
-    className="bg-transparent md:my-10 md:py-16 md:px-8 min-h-[50vh]   flex items-center"
+    className="bg-transparent md:mt-10 md:py-16 md:px-8 min-h-[50vh]   flex items-center"
     > <motion.div
     
     initial={{ opacity: 0, y: 20 }}
@@ -53,10 +53,16 @@ const Contact = () => {
       
        className="flex flex-wrap items-center justify-center gap-4">
         <button className="bg-black text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-900 transition">
-          Contact us
+        <a href="https://forms.gle/jqjCnEuJpFdGpZcA8" target="_blank" rel="noopener noreferrer">
+            Get Started
+           </a>
         </button>
         <button className="bg-white border border-gray-300 text-gray-900 font-medium px-6 py-3 rounded-lg hover:bg-gray-100 transition">
-          Our services
+         
+         <a href="#services"> 
+           Services
+          
+           </a>
         </button>
       </motion.div>
     </motion.div>

@@ -18,7 +18,7 @@ const About = () => {
   return (
     <div 
   id='about'
-  className="  md:my-10  backdrop-blur-sm ">
+  className="   md:my-10  backdrop-blur-sm ">
   <motion.div
    initial={{ opacity: 0, y: 50 }}
    whileInView={{ opacity: 1,y: 0 }}
@@ -26,7 +26,7 @@ const About = () => {
      transition={{ duration: 0.6, delay: 0.6 }}
      viewport={{ once: true }}
   
-  className="h-full w-full py-10 bg-[#ffffff]  rounded-lg  backdrop-blur-xs  flex flex-col md:flex-row items-center justify-center ">
+  className="h-full w-full py-10 bg-transparent  rounded-lg  backdrop-blur-xs  flex flex-col md:flex-row items-center justify-center ">
  
     <div className="w-full h-full md:w-1/2 text-center md:text-left text-4xl md:text-5xl font-semibold text-gray-800 p-6 md:p-8">
       <span className="text-indigo-600 font-bold">Helping</span> Companies Grow Beyond Their Limits
@@ -71,9 +71,9 @@ const About = () => {
       
        className="bg-[#EB885B] text-white rounded-2xl px-6 py-3 text-lg hover:bg-[#EB885B]/80 mt-4 ml-4">
       
-      <a href="about">
-        Get Started
-      </a>
+      <a href="https://forms.gle/jqjCnEuJpFdGpZcA8" target="_blank" rel="noopener noreferrer">
+            Get Started
+           </a>
       </button>
 
 

@@ -6,8 +6,18 @@ import heroimg from '../assets/hero.avif'
 const Hero = () => {
 
     const brands = [
-        "Google", "Apple", "Microsoft", "Amazon", "Facebook", "Netflix", "Tesla", "Adobe", "Spotify", "Slack"
-    ]
+      "UI/UX Design",
+      "Branding",
+      "SAAS Services",
+      "Printing",
+      "Web Design",
+     
+      "E-commerce Design",
+      "Logo Design",
+      "Mobile App Design",
+      
+      "Interaction Design",
+      "Landing Page Design"]
 
 
 
@@ -29,7 +39,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="text-7xl md:text-7xl  drop-shadow-[0_0_6px_rgb(169,169,169)] pt-10 md:pt-0 text-center md:text-left font-bold leading-tight"
+          className="text-7xl md:text-7xl   pt-10 md:pt-0 text-center md:text-left font-bold leading-tight"
         >
           BUILDING WEBSITES
         </motion.h1>
@@ -41,12 +51,12 @@ const Hero = () => {
           viewport={{ once: true }}
           className="inline-block px-4 mt-4 rounded-lg"
         >
-          <h2 className="text-indigo-600 font-bold text-5xl md:text-7xl text-center md:text-left">
+          <h2 className="text-indigo-600 font-bold text-6xl md:text-7xl text-center md:text-left">
             THAT INSPIRE<span className="text-black">.</span>
           </h2>
         </motion.div>
 
-        <p className="text-gray-400 mt-8 max-w-lg">
+        <p className="text-gray-700 mt-8 max-w-lg">
           Crafting stunning, high-performance websites that drive your business forward. 
           Let us bring your vision to life with modern, responsive design.
         </p>
@@ -54,7 +64,9 @@ const Hero = () => {
         {/* Buttons */}
         <div className="flex flex-wrap items-center gap-4 mt-8 z-10">
           <button className="bg-gray-200 text-black rounded-full px-6 py-3 text-lg hover:bg-gray-100">
+           <a href="https://forms.gle/jqjCnEuJpFdGpZcA8" target="_blank" rel="noopener noreferrer">
             Get Started
+           </a>
           </button>
         </div>
       </motion.div>
@@ -82,9 +94,9 @@ const Hero = () => {
           initial={{ opacity: 0, x: 50 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}
-          className="flex flex-wrap gap-3 mt-6"
+          className="flex flex-wrap gap-3 capitalize mt-6"
         >
-          {["Backend", "Frontend", "SAAS Services", "Content Creation", "Digital Marketing"].map((tag, index) => (
+          {["ui/ux", "Branding", "SAAS Services",  "Printing"].map((tag, index) => (
             <span
               key={index}
               className="border border-gray-400 px-4 py-2 rounded-full text-sm hover:bg-white hover:text-black transition"
@@ -107,7 +119,7 @@ const Hero = () => {
         viewport={{ once: true }}
         className="text-gray-400 text-xl py-4 font-semibold"
       >
-        Trusted by top brands worldwide
+        Complete Creative Suite...
       </motion.h2>
 
       <Marquee pauseOnHover speed={50} gradient={false}>

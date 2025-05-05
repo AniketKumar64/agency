@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
      <Navbar />
-    <div className="m-auto bg-white/30 pt-[10vh]">
+    <div className="m-auto p-4 md:p-2 backdrop-blur-3xl  pt-[10vh]">
    
   
     <motion.div
