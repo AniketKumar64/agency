@@ -42,7 +42,7 @@ export default function Navbar() {
           animate={{ height: "auto", opacity: 1 }}
           className="md:hidden flex flex-col bg-gray-50 px-4 pb-4 space-y-4"
         >
-          {["home", "about", "Services", "projects", "contact"].map((section) => (
+          {["home", "about", "services", "projects", "contact"].map((section) => (
             <a
               key={section}
               href={`#${section}`}
