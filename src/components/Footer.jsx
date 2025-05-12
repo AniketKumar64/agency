@@ -61,7 +61,7 @@ const Footer = () => {
     <img
       src={logo}
       alt="logo"
-      className="w-52 h-auto object-contain" // adjust size/style as needed
+      className="w-62 h-auto object-contain" // adjust size/style as needed
     />
   </a>
 </div>

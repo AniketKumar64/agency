@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
     id="contact"
-    className="bg-transparent md:mt-10 md:py-16 md:px-8 min-h-[50vh]   flex items-center"
+    className="bg-transparent md:mt-10  md:py-16 md:px-8 min-h-[50vh]   flex items-center"
     > <motion.div
     
     initial={{ opacity: 0, y: 20 }}

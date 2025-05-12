@@ -52,7 +52,7 @@ const Hero = () => {
           className="inline-block px-4 mt-4 rounded-lg"
         >
           <h2 className="text-indigo-600 font-bold text-6xl md:text-7xl text-center md:text-left">
-            THAT INSPIRE<span className="text-black">.</span>
+            THAT INSPIRE<span className="text-black"></span>
           </h2>
         </motion.div>
 

@@ -33,7 +33,7 @@ export default function Works() {
      
 <section
 id="works"
-className="bg-transparent  px-6 py-20">
+className="bg-transparent  px-1 md:px-6 py-20">
   <div className="max-w-7xl mx-auto">
     <h2 className="text-7xl font-bold text-right mb-16">Making it <br /> happen</h2>
 

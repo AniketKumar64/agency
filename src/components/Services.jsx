@@ -64,7 +64,7 @@ const Services = () => {
   return (
     <section
     id="services"
-     className="bg-transparent w-full md:w-[80%] mx-auto px-4  md:px-8 py-16">
+     className="bg-transparent w-full md:w-[80%] mx-auto px-1  md:px-8 py-16">
     <div className="max-w-7xl mx-auto">
       {/* Section Title */}
       <h2 className="text-4xl md:text-7xl p-6  font-bold mb-16 leading-tight text-right text-gray-900">

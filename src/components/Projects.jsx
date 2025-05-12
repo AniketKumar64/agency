@@ -35,7 +35,7 @@ const Projects = () => {
 
   return (
     <section id="projects"
-    className="md:w-[80%] md:mt-10 mt-5 md:m-auto px-8 py-16">
+    className="md:w-[80%] md:mt-10 mt-5 md:m-auto px-1 py-16">
      <h2 className="md:text-6xl text-5xl drop-shadow-[0_0_1px_rgb(0,0,0)] font-bold mb-12 text-center md:text-left text-black">PROJECTS</h2>
 
      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

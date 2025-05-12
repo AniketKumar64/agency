@@ -1,15 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import { useScroll, motion } from 'framer-motion'
 import Navbar from './components/Navbar'
+import Loader from './components/Loader'
 
 const App = () => {
 
   const { scrollYProgress } = useScroll()
+
+   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // 3 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <>
+   
+ 
+        <div className="">
+      {isLoading ? (
+        <Loader />
+      ) : (
+         <div>
      <Navbar />
     <div className="m-auto p-4 md:p-2 backdrop-blur-3xl  pt-[10vh]">
    
@@ -24,7 +42,11 @@ const App = () => {
       <Route path="/*" element={<NotFound />} />
     </Routes>
   </div>
-  </>
+  
+    </div>
+      )}
+   
+   </div>
   )
 }
 

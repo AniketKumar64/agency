@@ -7,7 +7,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="h-[10vh] fixed z-100 bg-white w-screen">
+    <nav className="h-[10vh] fixed shadow-2xs z-100 bg-white/50 backdrop-blur-3xl w-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-full">
        
       <div className="flex items-center justify-center">
@@ -15,7 +15,7 @@ export default function Navbar() {
     <img
       src={logo}
       alt="logo"
-      className="w-32 h-auto object-contain" // adjust size/style as needed
+      className="w-52 h-auto object-contain" // adjust size/style as needed
     />
   </a>
 </div>
