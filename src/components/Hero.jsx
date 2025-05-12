@@ -111,16 +111,8 @@ const Hero = () => {
 
   {/* Brands Marquee Section */}
   <motion.section className="bg-black py-10 overflow-hidden">
-    <div className="w-[80%] mx-auto px-5 mb-8">
-      <motion.h2
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="text-gray-400 text-xl py-4 font-semibold"
-      >
-        Complete Creative Suite...
-      </motion.h2>
+    <div className="w-[100%] mx-auto px-5 ">
+     
 
       <Marquee pauseOnHover speed={50} gradient={false}>
         {brands.map((brand, index) => (

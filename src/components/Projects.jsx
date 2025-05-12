@@ -1,6 +1,7 @@
 import React from 'react'
 import ecommerce from '../assets/ecommerce.png'
-import saas from '../assets/saas.png'
+import glamour from '../assets/glamour.jpg'
+import ProjectBrazaar from '../assets/ProjectBazaar.jpg'
 import { motion } from 'framer-motion'
 
 const Projects = () => {
@@ -15,20 +16,23 @@ const Projects = () => {
       link: "https://everydaylife.vercel.app/",
     },
     {
-      title: "SaaS CRM Application",
+      title: "Glamour Grid",
       description:
-        "Built a scalable SaaS CRM tool with multi-tenant architecture, subscription billing, role-based access, and API integrations (Stripe, AWS).",
-      imageUrl:saas,
-      link: "#",
+        "Designed a responsive grid layout for showcasing fashion products, featuring hover effects and smooth transitions.",
+      
+      imageUrl:glamour,
+      link: "http://glamourgrid.vercel.app",
     },
 
 
     {
-      title: "Event Management System",
+      title: "projectbazaar",
       description:
-        "Built a web application for managing events, registrations, ticket sales, and attendee check-ins with admin analytics dashboard.",
-      imageUrl: "https://colorlib.com/wp/wp-content/uploads/sites/2/1_event-planner-websites.jpg",
-      link: "#",
+        "Developed a platform for users to buy and sell projects, featuring user authentication, project listings, and a secure payment system.",
+        imageUrl: ProjectBrazaar,
+      
+     
+      link: "https://myprojectbazaar.vercel.app",
     },
   ]
 
@@ -52,7 +56,7 @@ const Projects = () => {
                src={project.imageUrl}
                alt={project.title}
                
-               className="w-full h-96 object-cover group-hover:opacity-90 transition"
+               className="w-full h-98 shadow-sm object-cover group-hover:opacity-90 transition"
              />
            </div>
            <h3 className="text-2xl font-semibold mt-4">{project.title}</h3>

@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // 3 seconds delay
+    }, 2000); // 2 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
@@ -23,7 +23,7 @@ const App = () => {
   return (
    
  
-        <div className="">
+        <div className="main-conainer">
       {isLoading ? (
         <Loader />
       ) : (

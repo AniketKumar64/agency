@@ -7,7 +7,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="h-[10vh] fixed shadow-2xs z-100 bg-white/50 backdrop-blur-3xl w-screen">
+    <nav className="h-[8vh] fixed shadow-2xs z-100 bg-white/50 backdrop-blur-3xl w-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-full">
        
       <div className="flex items-center justify-center">

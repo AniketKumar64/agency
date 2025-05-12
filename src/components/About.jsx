@@ -4,6 +4,13 @@ import heroabout from '../assets/about.jpg'
 
 
 const About = () => {
+
+  const stats = [
+        { number: "15+", label: "Project Successfully Completed" },
+        { number: "10+", label: "Happy Clients" },
+        { number: "8+", label: "Projects completed " },
+        { number: "15+", label: "Listed Projects" },
+      ];
    
     
       const worksdata = [
@@ -84,20 +91,54 @@ const About = () => {
 
 
   </motion.div>
+
+
+ 
 <div className="">
 {
   <div className=" achivements px-8 h-full py-12 flex flex-col items-center justify-center">
     <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8">Our Achievements</h1>
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-7xl">
-        {worksdata.map((item, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-sm p-6 flex flex-col items-center justify-center">
-                <h2 className="text-3xl font-bold text-gray-800">{item.percentage}</h2>
-                <p className="text-lg font-medium text-gray-600 mt-2">{item.title}</p>
-                <p className="text-gray-500 mt-2 text-center">{item.description}</p>
-            </div>
-        ))}
-     
-    </div>
+
+
+
+  <div className="border-t border-gray-500 mb-10"></div>
+  
+          <motion.div
+          
+            whileInView={{ x: [-40, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true }}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+             className="grid grid-cols-2 md:grid-cols-4 w-full text-center">
+    {worksdata.map((item, index) => (
+      <motion.div
+        whileInView={{ x: [-40, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.9,delay: index * 0.4 }}
+        viewport={{ once: true }}
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+  
+        key={index}
+        className="flex flex-col md:flex-col items-center justify-center p-6 relative"
+      >
+        <h3 className="text-4xl md:text-5xl font-bold text-[#0A0A0A]">
+          {item.percentage}
+        </h3>
+        <p className="mt-2 text-base md:text-lg text-[#0A0A0A]">
+          {item.title}
+        </p>
+  
+       
+        {index !== worksdata.length - 1 && (
+          <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 h-16 border-r border-gray-500"></div>
+        )}
+      </motion.div>
+    ))}
+  </motion.div>
+
+
+    
   </div>
 }
 </div>

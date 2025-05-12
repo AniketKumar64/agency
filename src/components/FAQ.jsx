@@ -44,7 +44,7 @@ const FAQ = ({data}) => {
         ]
 
   return (
-    <div className="h-[100%] md:w-[80%] flex flex-col rounded-2xl text-black text-left   md:m-auto m-2.5 px-3 md:px-6 py-20 ">
+    <div className="h-[100%] md:w-[80%] flex flex-col rounded-2xl text-black text-left   md:m-auto m-2.5 px-3 md:px-6 py-10 ">
       <h2 className="text-5xl font-bold mb-6 text-gray-800 text-center">Frequently Asked Questions</h2>
       <div className="space-y-4 w-full md:w-[80%] mx-auto md:px-3.5  ">
         {data.map((item, index) => (

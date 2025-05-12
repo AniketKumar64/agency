@@ -19,7 +19,7 @@ const Info = () => {
       ]
   return (
     <div className='py-16  md:py-9 md:my-10  '>
-         <section id="info" className="py-16 md:px-8 px-4 md:min-h-screen flex items-center bg-transparent"
+         <section id="info" className="py-16 md:px-8 px-4 md:min-h-[50vh] flex items-center bg-transparent"
      >
       <div className="max-w-7xl mx-auto px-4">
          <div className="flex items-center justify-center gap-2 mb-10">
@@ -92,11 +92,11 @@ const Info = () => {
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
       
-      className="left md:w-[33%] w-full   rounded-2xl  h-[60vh] md:h-full   flex justify-center items-center">
+      className="left md:w-[33%] w-full    rounded-2xl   md:h-full   flex justify-center items-center">
         < img
           alt="work"
           src={myinfo}
-          className="rounded-2xl object-cover w-full h-full"
+          className="rounded-2xl object-cover  w-full h-full md:w-[90%] md:h-[90%]  "
          ></img>
        
         
